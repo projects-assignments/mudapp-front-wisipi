@@ -6,7 +6,11 @@ import logo from '../../assets/logo2.png'
 import "./navBar.css"
 
 
-export const NavBar = () => {
+
+
+type Props = {}
+
+export const NavBar = (props: Props) => {
   return (
     <Navbar bg="dark" data-bs-theme="dark">
       <Container>
@@ -15,7 +19,7 @@ export const NavBar = () => {
         </Navbar.Brand>
         
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="m">
+          <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="/Login">Login</Nav.Link>
@@ -23,5 +27,7 @@ export const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+  )
 }
+
+export default NavBar

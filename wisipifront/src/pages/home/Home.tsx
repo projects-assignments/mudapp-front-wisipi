@@ -1,6 +1,10 @@
 import Accordion from 'react-bootstrap/Accordion';
 
-export const Home = () => {
+import React from 'react'
+
+type Props = {}
+
+const Home = (props: Props) => {
   return (
     <Accordion defaultActiveKey="0">
     <Accordion.Item eventKey="0">
@@ -31,3 +35,4 @@ export const Home = () => {
   )
 }
 
+export default Home

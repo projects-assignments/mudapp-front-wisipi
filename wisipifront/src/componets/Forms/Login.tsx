@@ -1,7 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-export const Login = () => {
+import React from 'react'
+
+type Props = {}
+
+const Login = (props: Props) => {
   return (
     <Form>
       <Form.Group className="mb-4" controlId="formBasicEmail">
@@ -25,3 +29,6 @@ export const Login = () => {
     </Form>
   )
 }
+
+export default Login
+

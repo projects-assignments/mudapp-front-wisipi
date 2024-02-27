@@ -5,19 +5,20 @@ import  Footer  from "../componets/footer/Footer";
 
 
 
-export const Layoud =()=> {
-  
+// import React from 'react'
 
+type Props = {}
+
+const Layoud = () => {
   return (
-    
     <>
     <NavBar />
     <Outlet />
     <Footer />
     </>
-      
-    
   )
 }
+
+export default Layoud
 
 
