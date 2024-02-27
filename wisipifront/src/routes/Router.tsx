@@ -1,3 +1,25 @@
 import{createBrowserRouter} from  'react-router-dom';
-import {Home} from '../pages/home';
+import { Layoud } from '../componets/Layoud';
+import {Home} from '../pages/home/Home';
 import {Login} from '../componets/Forms/Login';
+
+
+export const Router = createBrowserRouter([
+    // Página Principal
+    {
+        path: "/",
+        element:<Layoud/>,
+        children:[
+            {
+                path:"/",
+                element: <Home />
+            },
+            {
+                path:"/Login",
+                element:<Login/>
+            }
+
+        ]
+
+    }
+])
