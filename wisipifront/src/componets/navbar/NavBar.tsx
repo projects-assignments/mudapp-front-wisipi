@@ -12,7 +12,7 @@ type Props = {}
 
 export const NavBar = (props: Props) => {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar className="custom-navbar" variant="dark">
       <Container>
         <Navbar.Brand href="/" className="text-light">
           <img alt="logo" src={logo} width="250" height="" className="Logo" />{" "}
