@@ -1,33 +1,32 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from '../../assets/logo2.png'
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import logo from "../../assets/logo2.png";
+import NavDropdown from "react-bootstrap/esm/NavDropdown";
 
-import "./navBar.css"
+// import "./navBar.css"
 
-
-
-
-type Props = {}
+type Props = {};
 
 export const NavBar = (props: Props) => {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
-      <Container>
-        <Navbar.Brand href="/" className="text-light">
-          <img alt="logo" src={logo} width="250" height="" className="Logo" />{" "}
-        </Navbar.Brand>
-        
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="/Login">Login</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  )
-}
+    <Navbar bg="primary" expand="lg">
+    <Container>
+      <Navbar.Brand href="/">
+      <img alt="logo" src={logo} width="180" height="" />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav"  />
+      <Navbar.Collapse  id="basic-navbar-nav" >
+        <Nav className="ms-auto">
+          <Nav.Link className="text-light"href="/"></Nav.Link>
+          <Nav.Link className="text-light" href="/Join">Join</Nav.Link>
+         
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+);
 
-export default NavBar
+};
+
+export default NavBar;

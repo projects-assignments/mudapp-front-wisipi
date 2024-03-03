@@ -1,5 +1,5 @@
 import{createBrowserRouter} from  'react-router-dom';
-import  Layoud  from '../componets/Layoud';
+import  Layoud  from '../componets/Layout';
 import Home from '../pages/home/Home';
 import Login from '../componets/Forms/Login';
 
