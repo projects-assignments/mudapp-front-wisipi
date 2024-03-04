@@ -8,9 +8,9 @@ import "./navBar.css"
 import LoginForm from '../modals/Modal-Login';
 
 
+// import "./navBar.css"
 
-
-type Props = {}
+type Props = {};
 
 export const NavBar = (props: Props) => {
   return (
