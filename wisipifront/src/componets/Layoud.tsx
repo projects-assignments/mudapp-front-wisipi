@@ -1,6 +1,7 @@
 import { NavBar } from "./navbar/NavBar";
 import { Outlet } from "react-router-dom";
 import  Footer  from "../componets/footer/Footer";
+import  Card  from "./Card/Card";
 
 
 
@@ -14,6 +15,7 @@ const Layoud = () => {
     <>
     <NavBar />
     <Outlet />
+    <Card />
     <Footer />
     </>
   )
