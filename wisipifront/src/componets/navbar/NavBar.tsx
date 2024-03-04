@@ -2,9 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/logo2.png'
-import Avatar from '../../assets/avatar-Icon.png'
+
 
 import "./navBar.css"
+import LoginForm from '../modals/Modal-Login';
 
 
 
@@ -21,7 +22,8 @@ export const NavBar = (props: Props) => {
         
        
           <Nav className="ms-auto">
-            <img alt="avatar" src={Avatar} width="40" height="" className="avatar" />{" "}
+            {/* <img alt="avatar" src={Avatar} width="40" height="" className="avatar" />{" "} */}
+            <LoginForm />
           </Nav>
         
       </Container>
@@ -30,3 +32,18 @@ export const NavBar = (props: Props) => {
 }
 
 export default NavBar
+
+
+
+// This is a space for test :P
+
+
+            {/* <Nav.Link variant="primary" onClick={handleShow} href="/Login"> */}
+            {/* </Nav.Link> */}
+           
+           
+            {/* <Button variant="primary" onClick={handleShow}>
+            <img alt="avatar" src={Avatar} width="35" height="" className="avatar" />{" "}
+            </Button> */}
+
+           
