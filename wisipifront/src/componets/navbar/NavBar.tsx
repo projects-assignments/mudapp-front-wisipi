@@ -5,6 +5,7 @@ import logo from '../../assets/logo2.png'
 import Avatar from '../../assets/avatar-Icon.png'
 
 import "./navBar.css"
+import LoginForm from '../modals/Modal-Login';
 
 
 
@@ -19,16 +20,30 @@ export const NavBar = (props: Props) => {
           <img alt="logo" src={logo} width="150" height="" className="Logo" />{" "}
         </Navbar.Brand>
         
-        <Navbar.Collapse id="basic-navbar-nav">
+       
           <Nav className="ms-auto">
-            <Nav.Link href="/Login">
-            <img alt="avatar" src={Avatar} width="40" height="" className="avatar" />{" "}
-            </Nav.Link>
+            {/* <img alt="avatar" src={Avatar} width="40" height="" className="avatar" />{" "} */}
+            <LoginForm />
           </Nav>
-        </Navbar.Collapse>
+        
       </Container>
     </Navbar>
   )
 }
 
 export default NavBar
+
+
+
+// This is a space for test :P
+
+
+            {/* <Nav.Link variant="primary" onClick={handleShow} href="/Login"> */}
+            {/* </Nav.Link> */}
+           
+           
+            {/* <Button variant="primary" onClick={handleShow}>
+            <img alt="avatar" src={Avatar} width="35" height="" className="avatar" />{" "}
+            </Button> */}
+
+           
