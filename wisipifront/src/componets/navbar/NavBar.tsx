@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/logo2.png";
-import NavDropdown from "react-bootstrap/esm/NavDropdown";
+
 
 // import "./navBar.css"
 

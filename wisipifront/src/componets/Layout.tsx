@@ -1,6 +1,8 @@
 import { NavBar } from "./navbar/NavBar";
 import { Outlet } from "react-router-dom";
+import {Card_Home} from "./cards/Card_Home";
 import  Footer  from "./footer/Footer";
+import {FacilSeguro} from "./facilseguro/FacilSeguro"
 
 
 
@@ -9,16 +11,18 @@ import  Footer  from "./footer/Footer";
 
 type Props = {}
 
-const Layoud = () => {
+const Layout = () => {
   return (
     <>
     <NavBar />
+    <Card_Home/>
+    <FacilSeguro/>
     <Outlet />
-    <Footer />
+   <Footer />
     </>
   )
 }
 
-export default Layoud
+export default Layout
 
 
