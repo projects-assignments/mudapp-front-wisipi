@@ -33,7 +33,6 @@ const Header = () => {
           <div className={isMobile ? "position-relative mt-5 search-container-mobile" : "position-absolute bottom-0 start-0 w-100 mb-4 mx-4"} style={{ maxWidth: '300px' }}>
             <SearchBar />
           </div>
-
         </Col>
       </Row>
     </Container>

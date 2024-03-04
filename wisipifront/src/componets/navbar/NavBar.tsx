@@ -3,7 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/logo2.png'
 
+
 import "./navBar.css"
+import LoginForm from '../modals/Modal-Login';
 
 
 
@@ -12,22 +14,36 @@ type Props = {}
 
 export const NavBar = (props: Props) => {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar className="custom-navbar" variant="dark">
       <Container>
         <Navbar.Brand href="/" className="text-light">
-          <img alt="logo" src={logo} width="250" height="" className="Logo" />{" "}
+          <img alt="logo" src={logo} width="150" height="" className="Logo" />{" "}
         </Navbar.Brand>
         
-        <Navbar.Collapse id="basic-navbar-nav">
+       
           <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="/Login">Login</Nav.Link>
+            {/* <img alt="avatar" src={Avatar} width="40" height="" className="avatar" />{" "} */}
+            <LoginForm />
           </Nav>
-        </Navbar.Collapse>
+        
       </Container>
     </Navbar>
   )
 }
 
 export default NavBar
+
+
+
+// This is a space for test :P
+
+
+            {/* <Nav.Link variant="primary" onClick={handleShow} href="/Login"> */}
+            {/* </Nav.Link> */}
+           
+           
+            {/* <Button variant="primary" onClick={handleShow}>
+            <img alt="avatar" src={Avatar} width="35" height="" className="avatar" />{" "}
+            </Button> */}
+
+           

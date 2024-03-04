@@ -1,16 +1,13 @@
 import { NavBar } from "./navbar/NavBar";
 import { Outlet } from "react-router-dom";
-import  Footer  from "../componets/footer/Footer";
+import  Footer  from "./footer/Footer";
 import Header from "./header/Header";
 
 
-
-
-// import React from 'react'
-
 type Props = {}
 
-const Layoud = () => {
+const Layout = () => {
+  
   return (
     <>
     <NavBar />
@@ -21,6 +18,6 @@ const Layoud = () => {
   )
 }
 
-export default Layoud
+export default Layout
 
 
