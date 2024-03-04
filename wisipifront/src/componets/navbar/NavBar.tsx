@@ -19,13 +19,11 @@ export const NavBar = (props: Props) => {
           <img alt="logo" src={logo} width="150" height="" className="Logo" />{" "}
         </Navbar.Brand>
         
-        <Navbar.Collapse id="basic-navbar-nav">
+       
           <Nav className="ms-auto">
-            <Nav.Link href="/Login">
             <img alt="avatar" src={Avatar} width="40" height="" className="avatar" />{" "}
-            </Nav.Link>
           </Nav>
-        </Navbar.Collapse>
+        
       </Container>
     </Navbar>
   )
