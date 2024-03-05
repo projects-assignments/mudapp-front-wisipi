@@ -5,7 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import icon1 from "..//..//assets/ic_baseline-paypal.png"
+import icon1 from "..//..//assets/"
 import icon2 from "..//..//assets/Bizum 1.png"
 import icon3 from "..//..//assets/mingcute_card-pay-fill.png"
 
@@ -67,9 +67,9 @@ export const Modal_payment = (props: Props) => {
           <div style={{backgroundColor: "#479CB7"}}>
       <Row>
         
-        <Col><img src={icon1} width={100} style={{padding:10}}/></Col>
+        <Col><img src={icon1} width={150}/></Col>
         <Col ><img src={icon2} width={150}/></Col>
-        <Col><img src={icon3} width={100}/></Col>
+        <Col><img src={icon3} width={150}/></Col>
       </Row>
           </div>
 
