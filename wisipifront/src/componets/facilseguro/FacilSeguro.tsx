@@ -19,7 +19,7 @@ export const FacilSeguro = () => {
         <Col></Col>
       </Row>
       <Row>
-        <Col sm={2} className="text-dark "> {/*columna1*/}
+        <Col xxl={2} className="text-dark "> {/*columna1*/}
           
           <img src={logo1} width={180} />
         </Col>
@@ -31,7 +31,7 @@ export const FacilSeguro = () => {
           <h4>
             {" "}
             Registrate como usuario y accede para encontrar miles de
-            “MuddAppers” cerca de ti1.
+            “MuddAppers” cerca de ti.
           </h4>
         </Col>
       </Row>
@@ -52,7 +52,7 @@ export const FacilSeguro = () => {
 
       </Row>
       <Row>
-      <Col sm={2} className="text-dark "> {/*columna3*/}
+      <Col xxl={2} className="text-dark "> {/*columna3*/}
           
           <img src={logo3} width={180} />
         </Col>

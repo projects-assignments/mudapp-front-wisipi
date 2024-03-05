@@ -10,3 +10,4 @@ export const Modal1 = (props: Props) => {
     <div>Modal1</div>
   )
 }
+
