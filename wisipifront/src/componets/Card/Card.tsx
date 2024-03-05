@@ -1,5 +1,6 @@
 import React from 'react'
-import { Card as BootstrapCard, Button, Container, Row, Col} from 'react-bootstrap'
+import { Card as BootstrapCard, Container, Row, Col} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 import './Card.css'
 import image_card from '../../assets/auto1.png'
@@ -28,25 +29,25 @@ const cardData = [
 ]
 const Card = () => {
   return (
-    <section className="card-section block">
+    <section className="card-section block" >
       <Container fluid className='container'>
         <div className="title-cards-container">
-          <h1 style={{fontSize: "90px"}}>Tipo de transportes</h1>
+          <h1 className='title' style={{ fontFamily: "Merriweather Sans"}}>Tipos de transporte</h1>
         </div>
         <Row>
           {
             cardData.map(card => (
-              <Col md={4} key={card.id}>
+              <Col xs={12} sm={6} md={4} key={card.id}>
                 <div className="holder">
                   <BootstrapCard className="card p-3" style={{ width: "20rem", height: "25rem", backgroundColor: "#F9C96A"}}>
-                    <BootstrapCard.Img variant="top" src={card.img} className='card-img' />
+                    <BootstrapCard.Img variant="top" src={card.img} className='card-img'/>
                     <BootstrapCard.Body>
-                      <BootstrapCard.Title>{card.title}</BootstrapCard.Title>
-                      <BootstrapCard.Text>
+                      <BootstrapCard.Title style={{fontSize: "30px", fontFamily: "Merriweather Sans"}}>{card.title}</BootstrapCard.Title>
+                      <BootstrapCard.Text style={{ fontSize: "18px", fontFamily: "Work Sans"}}>
                         {card.description}
                       </BootstrapCard.Text>
-                      <a href="#" className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Ver más</a>
-                      <a href="#" className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Contratar</a>
+                      <Link to="/Login" className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Ver más</Link>
+                      <Link to="/Login" className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Contratar</Link>
                     </BootstrapCard.Body>
                   </BootstrapCard>
                 </div>
