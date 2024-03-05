@@ -8,7 +8,7 @@ import '/src/componets/modals/Modal-Login.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import ModalRegistre from './Modal-registre';
 
 
 function LoginForm() {
@@ -54,9 +54,10 @@ function LoginForm() {
         </Row>
         <Row className="mt-3">
         <Col>
-          <Button variant= "secundary" onClick={handleClose} style={{ backgroundColor: '#F9C96A', fontStyle: '#FFFFFF' }}>
+          {/* <Button variant= "secundary" onClick={handleClose} style={{ backgroundColor: '#F9C96A', fontStyle: '#FFFFFF' }}>
             No tienes cuenta, Registrate!
-          </Button>
+          </Button> */}
+          <ModalRegistre />
         </Col>
         <Col>
           <Button variant= "terciary" onClick={handleClose} style={{ backgroundColor: '#F9C96A', padding: '1.15rem 5rem 1.15rem 5rem'}}>
@@ -76,9 +77,3 @@ function LoginForm() {
 export default LoginForm;
 
 type Props = {}
-
-export const Modal1 = (props: Props) => {
-  return (
-    <div>Modal1</div>
-  )
-}
