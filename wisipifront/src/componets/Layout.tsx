@@ -1,8 +1,8 @@
 import { NavBar } from "./navbar/NavBar";
 import { Outlet } from "react-router-dom";
-import {Card_Home} from "./cards/Card_Home";
+
 import  Footer  from "./footer/Footer";
-import {FacilSeguro} from "./facilseguro/FacilSeguro"
+// import {FacilSeguro} from "./facilseguro/FacilSeguro"
 
 
 
@@ -15,8 +15,8 @@ const Layout = () => {
   return (
     <>
     <NavBar />
-    <Card_Home/>
-    <FacilSeguro/>
+   
+    {/* <FacilSeguro/> */}
     <Outlet />
    <Footer />
     </>
