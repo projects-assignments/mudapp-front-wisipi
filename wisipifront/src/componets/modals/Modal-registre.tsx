@@ -19,10 +19,11 @@ function ModalRegistre() {
 
       <Modal show={show} onHide={handleClose} 
       centered
-      size="lg">
-        <Modal.Body>
+      size="lg" 
+      >
+        <Modal.Body style={{backgroundColor: '#F9C96A'}}>
               <ToubleTab /> 
-        </Modal.Body>
+        </Modal.Body >
       </Modal>
     </>
   );
