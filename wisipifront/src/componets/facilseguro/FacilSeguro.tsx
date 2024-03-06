@@ -11,10 +11,10 @@ export const FacilSeguro = () => {
     <Container style={{ backgroundColor: "#ffff" }}>
       <Row>
         <Col className="text-dark "></Col>
-        <Col sm={3} className="text-dark " xs={3}>
+        <Col sm={3} className="text-dark " xs={8}>
           <br></br>
           <br></br>
-          <h2>Facil y Seguro</h2>
+          <h2 style={{fontFamily: "Merriweather Sans", fontSize: "100px", width: "auto", marginBottom: "70px"}} >Fácil y Seguro</h2>
         </Col>
         <Col></Col>
       </Row>
