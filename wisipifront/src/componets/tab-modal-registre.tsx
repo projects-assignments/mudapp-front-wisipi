@@ -7,8 +7,8 @@ function ToubleTab() {
     <Tabs
       defaultActiveKey="user"
       id="uncontrolled-tab-example"
-      className="mb-3"
-      justify
+      className="mb-3" style ={{display: 'flex', flexDirection: 'row'}}
+     
     >
        <Tab eventKey="user" title="Usario">
        <UserRegistrasion />
