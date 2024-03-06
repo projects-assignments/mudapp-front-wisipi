@@ -1,5 +1,5 @@
 
-import { Card as BootstrapCard, Container, Row, Col} from 'react-bootstrap'
+import { Card as BootstrapCard, Container, Row, Col, Button} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 import './Card.css'
@@ -46,8 +46,8 @@ const Card = () => {
                       <BootstrapCard.Text style={{ fontSize: "18px", fontFamily: "Work Sans"}}>
                         {card.description}
                       </BootstrapCard.Text>
-                      <Link to="/Login" className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Ver más</Link>
-                      <Link to="/Login" className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Contratar</Link>
+                      <Button className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Ver más</Button>
+                      <Button className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Contratar</Button>
                     </BootstrapCard.Body>
                   </BootstrapCard>
                 </div>
