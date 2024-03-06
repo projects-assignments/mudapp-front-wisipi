@@ -6,8 +6,13 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import icon1 from "..//..//assets/PayPal-logo-white-png-horizontal.png"
 import icon2 from "..//..//assets/Bizum 1.png"
+=======
+import icon1 from "..//..//assets/paypal.png"
+import icon2 from "..//..//assets/transferencia.png"
+>>>>>>> feat-modalvermas
 =======
 import icon1 from "..//..//assets/paypal.png"
 import icon2 from "..//..//assets/transferencia.png"

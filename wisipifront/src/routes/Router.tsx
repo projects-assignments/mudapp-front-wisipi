@@ -4,7 +4,11 @@ import {Home }from '../pages/home/Home';
 import  Modal_payment  from '../componets/modals/Modal_payment';
 import {FacilSeguro} from "../componets/facilseguro/FacilSeguro";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Layout from '../componets/Layout';
+=======
+import Modal_verMas from '../componets/modals/Modal_verMas';
+>>>>>>> feat-modalvermas
 =======
 import Modal_verMas from '../componets/modals/Modal_verMas';
 >>>>>>> feat-modalvermas
