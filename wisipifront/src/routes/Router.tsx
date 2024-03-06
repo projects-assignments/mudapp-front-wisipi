@@ -4,6 +4,7 @@ import {Home }from '../pages/home/Home';
 import Login from '../componets/Forms/Login';
 import  Modal_payment  from '../componets/modals/Modal_payment';
 import {FacilSeguro} from "../componets/facilseguro/FacilSeguro";
+import Modal_verMas from '../componets/modals/Modal_verMas';
 
 
 export const Router = createBrowserRouter([
@@ -27,7 +28,12 @@ export const Router = createBrowserRouter([
             {
                 path:"/Modal_payment",
                 element:<Modal_payment/>
+            },
+            {
+                path:"/Modal_verMas",
+                element:<Modal_verMas/>
             }
+
 
 
         ]
