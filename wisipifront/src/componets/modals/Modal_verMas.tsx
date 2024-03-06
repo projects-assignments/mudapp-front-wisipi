@@ -12,12 +12,15 @@ import ListGroup from 'react-bootstrap/ListGroup';
 type Props = {}
 
  export const Modal_verMas = (props: Props) => {
+    
 
   return (
+    
     <div
       className="modal show"
       style={{ display: 'block', position: 'initial' }}
     >
+       
       <Modal.Dialog>
       <Modal.Body style={{ backgroundColor: "#479CB7" }}>
       <Container>
@@ -46,4 +49,4 @@ type Props = {}
   )
 }
 
-export default Modal_verMas
+export default Modal_verMas;
