@@ -3,7 +3,11 @@ import {Home }from '../pages/home/Home';
 
 import  Modal_payment  from '../componets/modals/Modal_payment';
 import {FacilSeguro} from "../componets/facilseguro/FacilSeguro";
+<<<<<<< HEAD
 import Layout from '../componets/Layout';
+=======
+import Modal_verMas from '../componets/modals/Modal_verMas';
+>>>>>>> feat-modalvermas
 
 
 export const Router = createBrowserRouter([
@@ -24,7 +28,12 @@ export const Router = createBrowserRouter([
             {
                 path:"/Modal_payment",
                 element:<Modal_payment/>
+            },
+            {
+                path:"/Modal_verMas",
+                element:<Modal_verMas/>
             }
+
 
 
         ]

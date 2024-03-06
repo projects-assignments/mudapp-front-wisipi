@@ -5,8 +5,13 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+<<<<<<< HEAD
 import icon1 from "..//..//assets/PayPal-logo-white-png-horizontal.png"
 import icon2 from "..//..//assets/Bizum 1.png"
+=======
+import icon1 from "..//..//assets/paypal.png"
+import icon2 from "..//..//assets/transferencia.png"
+>>>>>>> feat-modalvermas
 import icon3 from "..//..//assets/mingcute_card-pay-fill.png"
 
 type Props = {};
@@ -26,6 +31,7 @@ export const Modal_payment = (props: Props) => {
           </Modal.Header>
 
           <Modal.Body style={{ backgroundColor: "#479CB7" }}>
+          
             <Row className="g-2">
               <Col md>
                 <FloatingLabel
@@ -64,17 +70,21 @@ export const Modal_payment = (props: Props) => {
               </Col>
             </Row>
           </Modal.Body>
-          <div style={{backgroundColor: "#479CB7"}}>
+          <div className="text-center" style={{backgroundColor: "#479CB7"}}>
+          <br></br>
+      
       <Row>
         
-        <Col><img src={icon1} width={150}/></Col>
-        <Col ><img src={icon2} width={150}/></Col>
-        <Col><img src={icon3} width={150}/></Col>
+        <Col sm={4}><img src={icon1} width={50}/></Col>
+        <Col  sm={4}><img src={icon2} width={50}/></Col>
+        <Col sm={4}><img src={icon3} width={50}/></Col>
       </Row>
+      <br></br>
+        <br></br>  
           </div>
 
           <Modal.Footer style={{ backgroundColor: "#479CB7" }}>
-            <Button variant="light">Confirmar</Button>
+            <Button className="buttom-center" variant="light">Confirmar</Button>
           </Modal.Footer>
         </Modal.Dialog>
       </Container>
