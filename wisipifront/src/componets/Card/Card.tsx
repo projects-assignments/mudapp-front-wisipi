@@ -40,7 +40,7 @@ const Card = () => {
               <Col xs={12} sm={6} md={4} key={card.id}>
                 <div className="holder">
                   <BootstrapCard className="card p-3" style={{ width: "20rem", height: "25rem", backgroundColor: "#F9C96A"}}>
-                    <BootstrapCard.Img variant="top" src={card.img} className='card-img'/>
+                  <BootstrapCard.Img variant="top" src={card.img} className='card-img' style={{width: "100%", height: "180px"}}/>
                     <BootstrapCard.Body>
                       <BootstrapCard.Title style={{fontSize: "30px", fontFamily: "Merriweather Sans"}}>{card.title}</BootstrapCard.Title>
                       <BootstrapCard.Text style={{ fontSize: "18px", fontFamily: "Work Sans"}}>

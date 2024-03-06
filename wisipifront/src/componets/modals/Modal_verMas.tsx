@@ -42,7 +42,7 @@ type Props = {}
 
         {/* <Modal.Footer style={{ backgroundColor: "#479CB7" }}> */}
       
-          <Button variant="primary">Contratar</Button>
+          <Button  variant="primary">Contratar</Button>
         {/* </Modal.Footer> */}
       </Modal.Dialog>
     </div>

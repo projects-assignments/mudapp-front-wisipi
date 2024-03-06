@@ -13,7 +13,7 @@ const Footer = () => {
           <Col className="p-0">
             <Image
               className="full-width-image"
-              src={footerImage}
+              src={footerImage} 
               alt="Footer Image"
               fluid
             />
@@ -27,7 +27,7 @@ const Footer = () => {
         style={{ backgroundColor: "#299E5D" }}
       >
         <Row className="justify-content-md-center text-white">
-          <Col md={7} className="text-details">
+          <Col md={6} className="text-details">
             <div className="footer-brand">
               MudAPP
             </div>
