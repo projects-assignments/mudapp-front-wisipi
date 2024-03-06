@@ -4,13 +4,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/logo2.png'
 
 
-import "./navBar.css"
-import LoginForm from '../modals/Modal-Login';
+import "./navBar.css";
 
 
+// import "./navBar.css"
 
-
-type Props = {}
+type Props = {};
 
 export const NavBar = (props: Props) => {
   return (
@@ -22,8 +21,7 @@ export const NavBar = (props: Props) => {
         
        
           <Nav className="ms-auto">
-            {/* <img alt="avatar" src={Avatar} width="40" height="" className="avatar" />{" "} */}
-            <LoginForm />
+          
           </Nav>
         
       </Container>
