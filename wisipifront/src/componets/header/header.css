@@ -2,22 +2,43 @@
     margin-top: 0;
     padding-left: 0;
     padding-right: 0;
+    border: 2px solid green;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-container {
+      margin-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      height: 105vh;
+      display: flex;
+      align-items: center;
+  
+    }
+    
   }
   
   .hero-image {
-    position: relative;
-    padding: 0;
-  }
-  
-  .hero-image img {
     width: 100%;
-    height: auto;
+    padding: 0;
+    margin: 0;
   }
   
+
   .hero-text {
     position: absolute;
-    top: 80px; 
-    left: 90px; 
+    top: 20%; 
+    left: 16%; 
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-text {
+      position: absolute;
+      top: -90%; 
+      left: 10%;
+    }
+    
   }
   
   .hero-text p {
@@ -27,14 +48,64 @@
     color: #000;
   }
   
-  .hero-text h1 {
+  .hero-text h2{
     font-family: 'Londrina Solid', sans-serif;
-    font-size: 60px;
+    font-size: 100px;
     font-weight: 400;
     color: #0D6E6E;
+    background: none;
+
   }
 
-  @media (min-width: 768px) and (max-width: 992px){
+  .container-form{
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 50%; 
+    left: 13%; 
+    width: 500px;
+  }
+
+  .btn-submit {
+    margin-bottom: 10px;
+    border-radius: 100px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-form{
+      margin-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      position: absolute;
+      top: 110%;
+      left: 0; 
+      width: 400px;
+      height: 230px;
+    }
+    
+    .form-label {
+      font-size: 25px;
+    }
+
+    .form-control {
+      font-size: 20px;
+    }
+
+    .container-input2 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn-submit {
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    
+  }
+
+  /* @media (min-width: 768px) and (max-width: 992px){
     .hero-text {
       position: absolute;
       top: 40px; 
@@ -59,7 +130,6 @@
     }
 
     .hero-text {
-        margin-left: 60px;
         position: absolute;
         top: 10px; 
         left: 10px; 
@@ -76,5 +146,5 @@
       .form{
         font-size: 13px;
       }
-}
+} */
 

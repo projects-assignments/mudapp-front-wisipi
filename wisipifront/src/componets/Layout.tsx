@@ -17,7 +17,7 @@ const Layout = () => {
   return (
     <>
     <NavBar />
-    {/* <Header/> */}
+    <Header/> 
     <Card/>
     <FacilSeguro/> 
     <Outlet />

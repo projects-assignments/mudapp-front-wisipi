@@ -2,8 +2,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: auto;
-    padding-bottom: 80px;
+    height: 90vh;
     background: #354656;
     text-align: center;
 }
@@ -26,6 +25,7 @@ h1 {
     width: 93%;
     height: 150px;
     margin: 0 auto;
+    margin-top: 95px;
     display: flex;
     justify-content: center;
     align-items: center;
