@@ -5,7 +5,7 @@ type Props = {}
 
 export const Home = (props: Props) => {
   return (
-    <div>Home</div>
+    <div></div>
   )
 }
 
