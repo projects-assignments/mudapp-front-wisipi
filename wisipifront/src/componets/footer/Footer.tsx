@@ -8,7 +8,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <>
-      <Container fluid className="p-0" style={{backgroundColor: "#354656"}}>
+      <Container fluid className="p-0" style={{}}>
         <Row className="m-0">
           <Col className="p-0">
             <Image
