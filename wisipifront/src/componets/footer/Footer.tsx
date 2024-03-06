@@ -1,6 +1,6 @@
-import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import footerImage from "../../assets/footerImage.svg";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./footer.css";
 
 // type Props = {}
@@ -8,7 +8,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <>
-      <Container fluid className="p-0" style={{}}>
+      <Container fluid className="p-0" style={{backgroundColor:'#354656'}}>
         <Row className="m-0">
           <Col className="p-0">
             <Image
@@ -109,7 +109,7 @@ const Footer = () => {
               </div>
 
               <div className="link-group" >
-                <a href="/Terminos de us"   style={{
+                <a href="/Terminos de uso"   style={{
                     color: "white",
                     fontSize: "18px",
                     margin: " 10px",
