@@ -6,21 +6,29 @@ import Modal from 'react-bootstrap/Modal';
 import iconuser from "..//../assets/usuario.png"
 import iconCar from "..//../assets/carro.png"
 import ListGroup from 'react-bootstrap/ListGroup';
+import useState from 'react'
+import { Link } from 'react-router-dom';
 
 
 
 type Props = {}
 
  export const Modal_verMas = (props: Props) => {
+  const [show, setShow] = useState(false);
+
+  const ButtonClose = () => setShow(false);
+  const ButtonVerMas = () => setShow(true);
+
+
     
 
   return (
+      <Button variant="primary" onClick={ButtonVerMas}>
+        <Link to="/Login" className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Ver más</Link>
+      </Button>
     
-    <div
-      className="modal show"
-      style={{ display: 'block', position: 'initial' }}
     >
-       
+    <Modal show={show} onHide={ButtonClose}> 
       <Modal.Dialog>
       <Modal.Body style={{ backgroundColor: "#479CB7" }}>
       <Container>
@@ -42,10 +50,11 @@ type Props = {}
 
         {/* <Modal.Footer style={{ backgroundColor: "#479CB7" }}> */}
       
-          <Button href="/Modal_payment" variant="primary">Contratar</Button>
+          <Button  variant="primary">Contratar</Button>
         {/* </Modal.Footer> */}
       </Modal.Dialog>
-    </div>
+      </Modal>
+  
   )
 }
 
