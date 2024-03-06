@@ -1,8 +1,7 @@
 import { NavBar } from "./navbar/NavBar";
 import { Outlet } from "react-router-dom";
-import  Footer  from "../componets/footer/Footer";
 import Header from "./header/Header";
-
+import Footer from "./footer/Footer";
 
 
 
@@ -10,17 +9,18 @@ import Header from "./header/Header";
 
 type Props = {}
 
-const Layoud = () => {
+const Layout = () => {
   return (
     <>
     <NavBar />
-    <Header/>
+    <Header />
     <Outlet />
     <Footer />
+   
     </>
   )
 }
 
-export default Layoud
+export default Layout
 
 

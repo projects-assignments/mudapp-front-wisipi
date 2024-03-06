@@ -33,6 +33,25 @@
     font-weight: 400;
     color: #0D6E6E;
   }
+
+  @media (min-width: 768px) and (max-width: 992px){
+    .hero-text {
+      position: absolute;
+      top: 40px; 
+      left: 90px; 
+    }
+
+    .hero-text p {
+      font-size: 30px;
+    }
+
+    .hero-text h1 {
+      font-size: 50px;
+    }
+  }
+
+
+
   
   @media (max-width: 768px) {
     .hero-image {
@@ -40,11 +59,10 @@
     }
 
     .hero-text {
-       
+        margin-left: 60px;
         position: absolute;
         top: 10px; 
         left: 10px; 
-        
       }
       
       .hero-text p {
@@ -54,5 +72,9 @@
       .hero-text h1 {
         font-size: 24px; 
       }
-  }
-  
+
+      .form{
+        font-size: 13px;
+      }
+}
+

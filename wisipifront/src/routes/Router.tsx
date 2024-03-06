@@ -1,22 +1,21 @@
 import{createBrowserRouter} from  'react-router-dom';
-import  Layoud  from '../componets/Layoud';
-import Home from '../pages/home/Home';
-import Login from '../componets/Forms/Login';
+import {Home }from '../pages/home/Home';
+import Layout from '../componets/Layout';
 
 
 export const Router = createBrowserRouter([
     // Página Principal
     {
         path: "/",
-        element:<Layoud/>,
+        element:<Layout/>,
         children:[
             {
                 path:"/",
                 element: <Home />
             },
             {
-                path:"/Login",
-                element:<Login/>
+                // path:"/Login",
+                // element:<Login/>
             }
 
         ]
