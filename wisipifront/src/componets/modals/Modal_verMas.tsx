@@ -24,7 +24,7 @@ type Props = {}
 
   return (
       <Button variant="primary" onClick={ButtonVerMas}>
-        <Link to="/Login" className="btn btn-primary" style={{backgroundColor: "#0D6E6E", border: "none"}}>Ver más</Link>
+        Ver más
       </Button>
     
     >
@@ -33,7 +33,7 @@ type Props = {}
       <Modal.Body style={{ backgroundColor: "#479CB7" }}>
       <Container>
       <Row>
-        <Col sm={2}><img src={iconuser} width={80}/> </Col>
+        <Col sm={2}> <img src={iconuser} width={80}/> </Col>
         <Col><img src={iconCar} width={80}/></Col>
       </Row>
     </Container>

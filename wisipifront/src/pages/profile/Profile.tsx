@@ -56,8 +56,8 @@ export const Profile = (props: Props) => {
         <Col sm={5}>
             <Form onSubmit={handleSubmitimg}>
       <Form.Group controlId="formImageUpload">
-        <Form.Label>Select Image</Form.Label>
-        <Form.Control type="file" onChange={handleChangeimg} />
+        <Form.Label >Select Image</Form.Label>
+        <Form.Control  type="file" onChange={handleChangeimg} />
       </Form.Group>
       {imageUrl && (
         <img src={imageUrl} alt="Preview" width={200} />

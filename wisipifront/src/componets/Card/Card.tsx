@@ -1,6 +1,6 @@
 
 import { Card as BootstrapCard, Container, Row, Col, Button} from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+
 import {Modal_verMas} from "..//modals/Modal_verMas"
 
 import './Card.css'
