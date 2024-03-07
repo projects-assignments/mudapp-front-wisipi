@@ -1,5 +1,3 @@
-
-
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -14,9 +12,36 @@ import ModalRegistre from './Modal-registre';
 
 function LoginForm() {
   const [show, setShow] = useState(false);
+// fetch
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleLogin = async () => {
+    try {
+      const response = await fetch('auth/signin', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: username,
+          password,
+        }),
+      });
+
+      if (response.ok) {
+        console.log('Usuario autenticado');
+        
+      } else {
+        console.error('Error al iniciar sesión');
+      }
+    } catch (error) {
+      console.error('Error de red:', error);
+    }
+  };
 
   return (
     <>
