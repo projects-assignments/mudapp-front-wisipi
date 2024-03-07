@@ -7,7 +7,7 @@ import iconuser from "..//../assets/usuario.png"
 import iconCar from "..//../assets/carro.png"
 import ListGroup from 'react-bootstrap/ListGroup';
 import useState from 'react'
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -50,7 +50,7 @@ type Props = {}
 
         {/* <Modal.Footer style={{ backgroundColor: "#479CB7" }}> */}
       
-          <Button  variant="primary">Contratar</Button>
+          <Button type="button" variant="primary">Contratar</Button>
         {/* </Modal.Footer> */}
       </Modal.Dialog>
       </Modal>
