@@ -1,0 +1,65 @@
+.full-width-image {
+  width: 100%;
+  padding: 0;
+}
+
+.footer-brand {
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.footer-description {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 20px;
+  line-height: 30px;
+}
+
+.footer-contact {
+  background-color: #479cb7;
+  margin: 0 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.links-container {
+  width: 100%;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.link-group {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .links-container {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .link-group {
+    align-items: center;
+  }
+}
